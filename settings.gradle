@@ -1,0 +1,3 @@
+include ':httputil'
+include ':app'
+rootProject.name = "HttpUtilDemo"
