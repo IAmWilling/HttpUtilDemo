@@ -14,3 +14,7 @@ Http请求工具类 KT
 - post 两种(1.json post 2.表单提交post)
 - postFile 文件上传
 - UploadProgress 文件上传进度监听 返回当前上传进度 0 ~ 1
+
+# 特别说明
+这些请求第一个参数都是lifecycle，要和特定的Activity或者Fragment的生命周期绑定，
+这样，当一个Activity或者Fragment销毁的时候，会取消当前绑定的界面的一系列请求，防止空指针异常的问题
